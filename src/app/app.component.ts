@@ -31,8 +31,7 @@ export class MyApp {
       { title: 'Categoria', component: CategoriaPage },
       { title: 'Contact', component: ContactPage },
       { title: 'List', component: ListPage },
-      { title: 'Livro-List', component: LivroListPage },
-      { title: 'Tabs', component: TabsPage }
+      { title: 'Livro-List', component: LivroListPage }
     ];
 
   }

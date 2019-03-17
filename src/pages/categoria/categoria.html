@@ -5,11 +5,28 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-navbar>
-    <ion-title>categoria</ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-
-</ion-content>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Categorias</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <h2>Lista de categorias:</h2>
+  
+  
+  <ion-card *ngFor="let item of items">
+    <img [src]="item.icon"/>
+    <ion-card-content>
+      <ion-card-title>
+        {{ item.title }}
+        </ion-card-title>
+      <p>
+        Nota: <ion-badge color="secondary">{{ item.note }}</ion-badge>
+      </p>
+    </ion-card-content>
+  </ion-card>
+  </ion-content>
+  
